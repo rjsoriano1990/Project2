@@ -3,7 +3,22 @@
 ## Project Proposal
 
 Our team wanted to look at the effects of Covid-19. We looked for datasets on unemployment, vaccines, and deaths all by state.
-We wanted to see if life has gotten better over time with people getting vaccinated, be it lower death percentage or lower unemployment rates.
+We wanted to see if life has gotten better over time with people getting vaccinated, be it lower death percentage or lower unemployment rates. All of our data was loaded into a relational database, Postgres.
+
+## Preliminary Findings
+
+We ran a query to see the total percentage of completed vaccination series by state. We found, surprisingly, California only ranked 15th out of all 50 states and Vermont was 1st. We weren't able to find a significant effect on unemployment rates or case to death percentages for California. Unemployment rates remained low in Vermont and seemed unaffected by vaccinations. Vermont did have a 50% decrease in case to death percentages as vaccination percentages increased.
+
+## Future Analysis
+
+Given the time constraints of this project we were only able to run limited analysis on the database.
+Future analysis of this database could include:
+- State vs State
+- Total Cases vs Total Deaths
+- Unemployment rates vs Death percentage
+- Pfizer Vaccines vs Moderna Vaccines
+- Vaccines distributed vs Vaccines administered
+- 
 
 ## Data
 
@@ -12,11 +27,11 @@ Data accumulated from:
 - The Bureau of Labor Statistics
 Data population consists of **Unemployment Rates** taken from The Bureau of Labor Statistics, **Covid-19 Vaccinations** and **Covid-19 Cases and Deaths** taken from The Centers for Disease Control and Prevention.
 
-## Extraction
+## Extract
 
 We extracted the **Covid-19 Vaccinations** and **Covid-19 Cases and Deaths** from https://data.cdc.gov/  by exporting the datasets as csv files. For the **Unemployment Rates**,  we extracted the data from https://www.bls.gov/ by exporting the dataset as a csv file as well.
 
-## Transformation
+## Transform
 
 For the **Covid-19 Vaccinations** after exporting it as a csv file we imported it into our Jupyter Notebook to work on it in Pandas and transformed it by doing the following:
 - Selected the columns we wanted to use and created a new dataframe.
@@ -39,6 +54,12 @@ For the **Unemployment Rates** after exporting it as a csv file we imported it i
 - Created a dictionary to rename every Series ID to a state.
 - Created the final dataframe.
 
+## Load
+
+A new database was created in Postgres called "Project2" and three tables were added, one for each cleaned dataframe.
+The three dataframes were then uploaded from each Jupyter Notebook to their corresponding table. A visualization of our ERD can be seen below.
+
+![ERD](Images/erd.png)
 
 
 ## Sources
