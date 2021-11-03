@@ -23,7 +23,9 @@ administered_moderna INT,
 administered_pfizer INT,
 recip_administered INT,
 administered_dose1_recip INT,
-administered_dose1_pop_pct INT
+administered_dose1_pop_pct FLOAT,
+series_complete_yes INT,
+series_complete_pop_pct FLOAT
 );
 
 CREATE TABLE us_unemployment (
