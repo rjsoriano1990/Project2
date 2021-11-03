@@ -10,7 +10,29 @@ We wanted to see if life has gotten better over time with people getting vaccina
 Data accumulated from: 
 - The Centers for Disease Control and Prevention
 - The Bureau of Labor Statistics
-Data population consists of **Unemployment Rates** taken from The Bureau of Labor Statistics, **Covid-19 Vaccinations** and **Deaths Related to Covid-19** taken from The Centers for Disease Control and Prevention.
+Data population consists of **Unemployment Rates** taken from The Bureau of Labor Statistics, **Covid-19 Vaccinations** and **Covid-19 Cases and Deaths** taken from The Centers for Disease Control and Prevention.
+
+## Extraction
+
+We extracted the **Covid-19 Vaccinations** and **Covid-19 Cases and Deaths** from https://data.cdc.gov/  by exporting the datasets as csv files. For the **Unemployment Rates**,  we extracted the data from https://www.bls.gov/ by exporting the dataset as a csv file as well.
+
+## Transformation
+
+For the **Covid-19 Vaccinations** after exporting it as a csv file we imported it into our Jupyter Notebook to work on it in pandas and transformed it by doing all of following:
+- Selected the columns we wanted to use and creating a new dataframe.
+- Converted the "Date" column to datetime format.
+- Selected Covid-19 data for all 50 states in the U.S.
+- Renamed the columns to all lowercase letters.
+- Sorted the columns and created the final dataframe.
+
+
+
+
+
+
+
+
+
 
 ## Sources
 
