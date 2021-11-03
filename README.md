@@ -12,4 +12,10 @@ Data accumulated from:
 - The Bureau of Labor Statistics
 Data population consists of **Unemployment Rates** taken from The Bureau of Labor Statistics, **Covid-19 Vaccinations** and **Deaths Related to Covid-19** taken from The Centers for Disease Control and Prevention.
 
+## Sources
 
+- [COVID-19 Vaccinations in the United States, Jurisdiction](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc)
+
+- [Unemployment Rates for States](https://www.bls.gov/web/laus/laumstrk.htm)
+
+- [United States COVID-19 Cases and Deaths by State over Time](https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36/data)
