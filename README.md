@@ -18,19 +18,26 @@ We extracted the **Covid-19 Vaccinations** and **Covid-19 Cases and Deaths** fro
 
 ## Transformation
 
-For the **Covid-19 Vaccinations** after exporting it as a csv file we imported it into our Jupyter Notebook to work on it in pandas and transformed it by doing all of following:
-- Selected the columns we wanted to use and creating a new dataframe.
+For the **Covid-19 Vaccinations** after exporting it as a csv file we imported it into our Jupyter Notebook to work on it in Pandas and transformed it by doing the following:
+- Selected the columns we wanted to use and created a new dataframe.
 - Converted the "Date" column to datetime format.
 - Selected Covid-19 data for all 50 states in the U.S.
 - Renamed the columns to all lowercase letters.
 - Sorted the columns and created the final dataframe.
 
+For the **Covid-19 Cases and Deaths** after exporting it as a csv file we imported it into our Jupyter Notebook to work on it in Pandas and transformed it by doing the following:
+- Converted "submission_date" column to datetime format.
+- Dropped all data before December 13, 2020.
+- Changed the order by the submission date.
+- Selected data the 50 states only, and removed any counties or territories.
+- Created the final dataframe.
 
-
-
-
-
-
+For the **Unemployment Rates** after exporting it as a csv file we imported it into our Jupyter Notebook to work on it in Pandas and transformed it by doing the following:
+- Converted "submission_date" column to datetime format.
+- Selected the columns that were needed; "submission_date", "Series ID", "Value".
+- Renamed "Series ID" column to "state".
+- Created a dictionary to rename every Series ID to a state.
+- Created the final dataframe.
 
 
 
